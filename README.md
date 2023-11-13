@@ -58,7 +58,7 @@ masuk ke user
 su – mpiusr
 ```
 
-#Konfigurasi SSH
+## Konfigurasi SSH
 
 lakukan di master dan slave:
 ```bash
