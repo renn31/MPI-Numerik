@@ -167,9 +167,9 @@ Sesuaikan dengan progrm yang akan dijalankan
 mpirun -np 3 -host master,slave1,slave2,slave3 python3 test.py
 ```
 
-##Eksekusi program Numerik dengan MPI
+## Eksekusi program Numerik dengan MPI
 
-lakukan di master:
+lakukan di master dan slave:
 ```bash
 sudo apt install python3-pip
 pip install mpi4py
