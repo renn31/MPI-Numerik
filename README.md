@@ -23,6 +23,14 @@ Lakukan pada master dan slave:
 Edit file /etc/hosts melalui nano. Tambahkan isinya dengan beberapa IP dan aliasnya. Di bawah ini sebagai contoh. sesuaikan IP nya dengan komputer masing-masing. Untuk mengecek IP gunakan perintah ifconfig.
 
 Tambahkan baris berikut dengan format :
+```bash
+[IP_address1] [hostname1]
+[IP_address2] [hostname2] 
+[IP_address3] [hostname3] 
+[IP_address4] [hostname4] 
+```
+
+sesuaikan dengan komputer yang akan dijalankan, contoh:
 
 ```bash
 [10.8.141.217] [master]
