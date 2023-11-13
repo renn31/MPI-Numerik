@@ -1,7 +1,7 @@
 # MPI-NUMERIK
 mengeksekusi program numerik secara paralel menggunakan MPI
 
-#Device Dan Tools Yang di gunakan dalam mengeksekusi
+## Device Dan Tools Yang di gunakan dalam mengeksekusi
 1.	Linux Mint
   -	Linux mint master
   -	Linux mint slave1
@@ -11,12 +11,12 @@ mengeksekusi program numerik secara paralel menggunakan MPI
 3.	SSH (Master dan Slave)
 4.	Codingan Bubble Short python
 
-#Topology : 
+## Topology : 
 
 ![image](https://github.com/renn31/MPI-bubble-sort/assets/128461789/75118ea2-a078-42ba-a95e-d0f9d10661f1)
 Pada percobaan ini digunakan empat komputer, dimana salah satunya sebagai komputer master, yang bertanggung jawab untuk mengoordinasikan dan mengontrol seluruh proses. Sementara itu, tiga komputer lainnya dijadikan sebagai slave, dengan tugas untuk menjalankan perintah-perintah dari komputer master. Penting untuk memastikan bahwa keempat komputer ini sudah terintegrasi dalam satu jaringan yang sama.	
 
-#Konfigurasi file /etc/hosts
+## Konfigurasi file /etc/hosts
 
 Lakukan pada master dan slave:
 
@@ -79,7 +79,7 @@ cat id_rsa.pub | ssh <nama user>@<host> "mkdir .ssh; cat >> .ssh/authorized_keys
 ```
 Lakukan penyalinan perintah berulang-ulang dari master ke slave dengan mengubah <host>  menjadi nama host masing-masing slave. Dengan membagikan kunci SSH, master akan dapat mengakses server slave jarak jauh dengan aman tanpa perlu memasukkan kata sandi setiap kali.
 
-#konfigurasi NFS
+## konfigurasi NFS
 
 Lakukan di master dan slave:
 
@@ -137,7 +137,7 @@ sesuaikan <server host>, <lokasi shared folder di master> dan<lokasi shared fold
 sudo mount master:/home/mpiusr/fix /home/mpiusr/fix
 ```
 
-#MPI
+## MPI
 
 lakukan di master dan slave:
 
@@ -166,7 +166,7 @@ Sesuaikan dengan progrm yang akan dijalankan
 mpirun -np 3 -host master,slave1,slave2,slave3 python3 test.py
 ```
 
-#Eksekusi program MPI
+##Eksekusi program Numerik dengan MPI
 
 lakukan di master:
 ```bash
