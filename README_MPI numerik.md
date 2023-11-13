@@ -38,7 +38,7 @@ sesuaikan dengan komputer yang akan dijalankan, contoh:
 [10.8.143.239] [slave2] 
 [10.8.143.46] [slave3]
 ```
-#Buat User Baru
+## Buat User Baru
 
 lakukan di master dan slave:
 
