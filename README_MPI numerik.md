@@ -14,6 +14,7 @@ mengeksekusi program numerik secara paralel menggunakan MPI
 ## Topology : 
 
 ![image](https://github.com/renn31/MPI-bubble-sort/assets/128461789/75118ea2-a078-42ba-a95e-d0f9d10661f1)
+
 Pada percobaan ini digunakan empat komputer, dimana salah satunya sebagai komputer master, yang bertanggung jawab untuk mengoordinasikan dan mengontrol seluruh proses. Sementara itu, tiga komputer lainnya dijadikan sebagai slave, dengan tugas untuk menjalankan perintah-perintah dari komputer master. Penting untuk memastikan bahwa keempat komputer ini sudah terintegrasi dalam satu jaringan yang sama.	
 
 ## Konfigurasi file /etc/hosts
